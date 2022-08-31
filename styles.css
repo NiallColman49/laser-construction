@@ -1,0 +1,7 @@
+@import url(//db.onlinewebfonts.com/c/6ba2a98d40a2a953a24fcf1b0f3f55db?family=Maax+Light);
+@import url(//db.onlinewebfonts.com/c/148fbec18900e43c3d7091d613ea227c?family=Maax+Medium);
+@import url(//db.onlinewebfonts.com/c/30c7b0ba24b3056fd3b4d95abf785da0?family=Maax);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
