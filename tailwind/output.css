@@ -42,6 +42,28 @@
       format("svg");
 }
 
+.qual-grid {
+  display: grid;
+  height: 300px;
+  width: 900px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  gap: 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  display: inline-block;
+  height: 50px;
+}
+
+a img {
+  max-height: 700px;
+  height: 100%;
+  width: 100%;
+}
+
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
@@ -1250,6 +1272,14 @@ input:checked + .toggle-bg{
   margin-bottom: 0.25rem;
 }
 
+.ml-40{
+  margin-left: 10rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
+}
+
 .block{
   display: block;
 }
@@ -1320,10 +1350,6 @@ input:checked + .toggle-bg{
 
 .w-full{
   width: 100%;
-}
-
-.w-3\/12{
-  width: 25%;
 }
 
 .w-56{

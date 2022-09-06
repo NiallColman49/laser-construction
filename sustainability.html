@@ -9,17 +9,34 @@
     <link rel="stylesheet" href="./styles.css" />
 
     <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <script>
+      function setDate() {
+        let today = new Date();
+        let dd = String(today.getDate()).padStart(2, "0");
+        let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+        let yyyy = today.getFullYear();
+        let time =
+          today.getHours() +
+          ":" +
+          today.getMinutes() +
+          ":" +
+          today.getSeconds();
+
+        today = dd + "/" + mm + "/" + yyyy + "// " + time;
+        document.getElementById("date").innerHTML = today;
+      }
+    </script>
   </head>
-  <body>
-    <div class="flex justify-between w-full pt-10">
+  <body onload="setDate()">
+    <div class="flex justify-between w-full pt-10 items-center">
       <a href="/">
         <img
-          class="pl-16 w-full"
+          class="pl-16 w-3/5"
           src="./assets/laser-blue-wordmark.svg"
           alt=""
         />
       </a>
-      <h2 class="font-body text-laser-blue">03:00, 6.45° C</h2>
+      <h2 id="date" class="font-mono text-laser-blue"></h2>
 
       <!-- Menu -->
       <button
