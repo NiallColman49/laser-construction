@@ -11,12 +11,18 @@
 
     <script>
       function setDate() {
-        var today = new Date();
-        var dd = String(today.getDate()).padStart(2, "0");
-        var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
-        var yyyy = today.getFullYear();
+        let today = new Date();
+        let dd = String(today.getDate()).padStart(2, "0");
+        let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+        let yyyy = today.getFullYear();
+        let time =
+          today.getHours() +
+          ":" +
+          today.getMinutes() +
+          ":" +
+          today.getSeconds();
 
-        today = mm + "/" + dd + "/" + yyyy;
+        today = dd + "/" + mm + "/" + yyyy + "// " + time;
         document.getElementById("date").innerHTML = today;
       }
     </script>
@@ -30,7 +36,7 @@
           alt=""
         />
       </a>
-      <h2 class="font-body text-laser-blue">03:00, 6.45° C</h2>
+      <h2 id="date" class="font-mono text-laser-blue"></h2>
 
       <!-- Menu -->
       <button
