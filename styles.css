@@ -2,6 +2,55 @@
 @import url(//db.onlinewebfonts.com/c/148fbec18900e43c3d7091d613ea227c?family=Maax+Medium);
 @import url(//db.onlinewebfonts.com/c/30c7b0ba24b3056fd3b4d95abf785da0?family=Maax);
 @import url(//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular);
+@import url(//db.onlinewebfonts.com/c/63467b9cbd4a4d7eafb5e64946ecaa18?family=Maison+Neue);
+@import url(//db.onlinewebfonts.com/c/1b3f9cb78376a36884f3908f37a42c91?family=Copyright+Klim+Type+Foundry);
+
+@font-face {
+  font-family: "TiemposText-Regular";
+  src: url("fonts/TiemposText-Regular/TiemposText-Regular.woff2")
+      format("woff2"),
+    url("fonts/TiemposText-Regular/TiemposText-Regular.woff") format("woff"),
+    url("fonts/TiemposText-Regular/TiemposText-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Copyright Klim Type Foundry";
+  src: url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot");
+  src: url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.svg#Copyright Klim Type Foundry")
+      format("svg");
+}
+
+.qual-grid {
+  display: grid;
+  height: 300px;
+  width: 900px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  gap: 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  display: inline-block;
+  height: 50px;
+}
+a img {
+  max-height: 700px;
+  height: 100%;
+  width: 100%;
+}
 
 @tailwind base;
 @tailwind components;
