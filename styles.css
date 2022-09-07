@@ -6,6 +6,21 @@
 @import url(//db.onlinewebfonts.com/c/1b3f9cb78376a36884f3908f37a42c91?family=Copyright+Klim+Type+Foundry);
 
 @font-face {
+  font-family: "Maison Neue";
+  src: url("//db.onlinewebfonts.com/t/63467b9cbd4a4d7eafb5e64946ecaa18.eot");
+  src: url("//db.onlinewebfonts.com/t/63467b9cbd4a4d7eafb5e64946ecaa18.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/63467b9cbd4a4d7eafb5e64946ecaa18.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/63467b9cbd4a4d7eafb5e64946ecaa18.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/63467b9cbd4a4d7eafb5e64946ecaa18.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/63467b9cbd4a4d7eafb5e64946ecaa18.svg#Maison Neue")
+      format("svg");
+}
+
+@font-face {
   font-family: "TiemposText-Regular";
   src: url("fonts/TiemposText-Regular/TiemposText-Regular.woff2")
       format("woff2"),
