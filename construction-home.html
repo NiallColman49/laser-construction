@@ -7,8 +7,25 @@
     <title>construction homepage</title>
     <link rel="stylesheet" href="./tailwind/output.css" />
     <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <script>
+      function setDate() {
+        let today = new Date();
+        let dd = String(today.getDate()).padStart(2, "0");
+        let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+        let yyyy = today.getFullYear();
+        let time =
+          today.getHours() +
+          ":" +
+          today.getMinutes() +
+          ":" +
+          today.getSeconds();
+
+        today = dd + "/" + mm + "/" + yyyy + "// " + time;
+        document.getElementById("date").innerHTML = today;
+      }
+    </script>
   </head>
-  <body>
+  <body onload="setDate()">
     <div class="bg-laser-blue h-725">
       <div>
         <h1 class="font-decor text-title text-white pl-16 pt-10 leading-title-text">
@@ -22,6 +39,8 @@
       </h2>
       <img class="float-right inline pt-20 px-16 w-825" src="./assets/image-7.jpg" alt="" />
     </div>
+
+
     <div class="flex justify-between w-full pt-10 items-center">
       <a href="/">
         <img
@@ -30,8 +49,8 @@
           alt=""
         />
       </a>
-      <h2 class="font-mono text-laser-blue ">03:00, 6.45° C</h2>
-      
+      <h2 id="date" class="font-mono text-laser-blue"></h2>
+
       <!-- Menu -->
       <button
         id="dropdownDividerButton"
@@ -41,6 +60,7 @@
       >
         Menu
       </button>
+
 
       <!-- Dropdown menu -->
       <div id="dropdownDivider" class="hidden z-10 w-56 bg-white font-mono">
