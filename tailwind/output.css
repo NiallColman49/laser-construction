@@ -6,7 +6,22 @@
 
 @import url(//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular);
 
-@import url(//db.onlinewebfonts.com/c/1b3f9cb78376a36884f3908f37a42c91?family=Copyright+Klim+Type+Foundry);
+@font-face {
+  font-family: "Copyright Klim Type Foundry";
+
+  src: url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot");
+
+  src: url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/1b3f9cb78376a36884f3908f37a42c91.svg#Copyright Klim Type Foundry")
+      format("svg");
+}
 
 @font-face {
   font-family: "Maison Neue";
@@ -1726,7 +1741,7 @@ input:checked + .toggle-bg{
 }
 
 .font-decor{
-  font-family: Tiempos Text Regular;
+  font-family: Copyright Klim Type Foundry;
 }
 
 .font-body{

@@ -12,7 +12,7 @@ module.exports = {
         body: ["Maison Neue"],
         medium: ["Maax Medium"],
         bold: ["Maax"],
-        decor: ["Tiempos Text Regular"],
+        decor: ["Copyright Klim Type Foundry"],
         mono: ["Maison Neue"],
         copy: ["Copyright Klim Type Foundry"],
       },
