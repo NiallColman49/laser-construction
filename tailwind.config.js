@@ -16,6 +16,9 @@ module.exports = {
         mono: ["Maison Neue"],
         copy: ["Copyright Klim Type Foundry"],
       },
+      screens: {
+        mobile: { max: "600px" },
+      },
       colors: {
         "laser-green": "#3f4d52",
         "laser-gold": "#b17938",
@@ -27,9 +30,10 @@ module.exports = {
       },
       height: {
         725: "725px",
+        775: "775px",
       },
       width: {
-        825: "825px",
+        825: "925px",
         250: "250px",
         32: "32px",
       },

@@ -1270,6 +1270,14 @@ input:checked + .toggle-bg{
   margin-bottom: 0.25rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -1318,6 +1326,10 @@ input:checked + .toggle-bg{
   height: 1rem;
 }
 
+.h-775{
+  height: 775px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1335,7 +1347,7 @@ input:checked + .toggle-bg{
 }
 
 .w-825{
-  width: 825px;
+  width: 925px;
 }
 
 .w-56{
@@ -1376,6 +1388,14 @@ input:checked + .toggle-bg{
 
 .w-4{
   width: 1rem;
+}
+
+.w-4\/5{
+  width: 80%;
+}
+
+.w-2\/3{
+  width: 66.666667%;
 }
 
 .flex-1{
@@ -1623,6 +1643,10 @@ input:checked + .toggle-bg{
   padding: 0.25rem;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -1668,6 +1692,11 @@ input:checked + .toggle-bg{
   padding-right: 1.25rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pl-16{
   padding-left: 4rem;
 }
@@ -1676,8 +1705,8 @@ input:checked + .toggle-bg{
   padding-top: 2.5rem;
 }
 
-.pt-20{
-  padding-top: 5rem;
+.pt-16{
+  padding-top: 4rem;
 }
 
 .pr-16{
@@ -1694,10 +1723,6 @@ input:checked + .toggle-bg{
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
 }
 
 .pt-72{
@@ -1718,6 +1743,10 @@ input:checked + .toggle-bg{
 
 .pt-2{
   padding-top: 0.5rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
 }
 
 .text-center{
@@ -1817,6 +1846,14 @@ input:checked + .toggle-bg{
 
 .leading-9{
   line-height: 2.25rem;
+}
+
+.leading-5{
+  line-height: 1.25rem;
+}
+
+.leading-10{
+  line-height: 2.5rem;
 }
 
 .tracking-tight{
@@ -2078,4 +2115,23 @@ input:checked + .toggle-bg{
 .dark .dark\:hover\:text-gray-300:hover{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+@media (max-width: 600px){
+  .mobile\:flex{
+    display: flex;
+  }
+
+  .mobile\:hidden{
+    display: none;
+  }
+
+  .mobile\:bg-laser-blue{
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 32 48 / var(--tw-bg-opacity));
+  }
+
+  .mobile\:font-decor{
+    font-family: Copyright Klim Type Foundry;
+  }
 }
