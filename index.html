@@ -9,8 +9,9 @@
     <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
   </head>
   <body class="bg-laser-blue">
+    <!-- desktop main container -->
     <div
-      class="grid grid-cols-2 items-center h-70 justify-items-center p-5 mt-32"
+      class="mobile:hidden grid grid-cols-2 items-center h-70 justify-items-center p-5 mt-32"
     >
       <div>
         <h1 class="text-5xl font-medium text-white">
@@ -41,15 +42,54 @@
         <h3 class="text-laser-gold font-mono text-sm mt-36">Hire Services</h3>
       </div>
     </div>
-    <div class="mt-20 h-2/6">
+
+    <div class="mobile:hidden mt-32 h-2/6">
       <img
         class="w-2/6 mx-auto"
         src="./assets/laser construction - logo - text - gold.svg"
         alt=""
       />
-      <h2 class="text-xl text-center text-white mt-8 w-3/5 mx-auto font-mono">
+      <h2 class="text-center text-white mx-auto font-mono w-4/6 mt-5 px-10">
         We are a specialist main contractor leading a new way for the industry,
-        as well as being a one-stop tool and plant hire facility.
+        as well as being a one-stop hire facility.
+      </h2>
+    </div>
+
+    <!-- desktop mobile container -->
+    <div
+      class="mobile:grid items-center justify-content:center mx-auto p-5 mt-20 w-9/12 sm:hidden"
+    >
+      <div>
+        <h1 class="text-2xl font-medium text-white">
+          Construction <br />Management <br />Delivery
+        </h1>
+        <a class="float-right" href="/construction-home.html">
+          <img class="w-full mt-4" src="./assets/white-arrow-icon.svg" alt="" />
+        </a>
+        <h3 class="text-laser-gold font-mono text-sm mt-20">
+          Construction Services
+        </h3>
+      </div>
+      <div class="mt-32">
+        <h1 class="text-2xl font-medium text-white">
+          Plant & Tool <br />Hire Services <br />Purchasing
+        </h1>
+        <a class="float-right" href="/construction-home.html">
+          <img class="w-full mt-4" src="./assets/white-arrow-icon.svg" alt="" />
+        </a>
+        <h3 class="text-laser-gold font-mono text-sm mt-20">Hire Services</h3>
+      </div>
+    </div>
+
+    <div class="mobile:mt-32 h-2/6 sm:hidden">
+      <img
+        class="w-4/6 mx-auto"
+        src="./assets/laser construction - logo - text - gold.svg"
+        alt=""
+      />
+      <h2 class="text-xs text-center text-white mx-auto font-mono mt-5 px-10">
+        We are a specialist main contractor leading a new way for the industry,
+        as well as being a one-stop hire facility.
       </h2>
     </div>
   </body>
