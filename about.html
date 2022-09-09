@@ -151,7 +151,7 @@
     </div>
 
     <!-- mobile hero image -->
-    <div class="mobile:flex justify-center items-center">
+    <div class="mobile:flex justify-center items-center sm:hidden">
       <img class="p-5" src="./assets/image-9.jpg" alt="" />
       <img
         class="mt-8 w-2/4 absolute"
@@ -172,7 +172,7 @@
 
     <!-- desktop stand for centered paragraph -->
     <div
-      class="mobile:hidden font-copy text-grey-text leading-paragraph-text text-3xl align-center mx-auto w-3/4 pt-16"
+      class="mobile:hidden font-copy text-grey-text leading-paragraph-text text-3xl align-center mx-auto w-3/4 p-32"
     >
       <div class="mx-auto text-center">
         <h2>
@@ -185,7 +185,7 @@
 
     <!-- mobile stand for centered paragraph -->
     <div
-      class="mobile:font-copy text-grey-text leading-paragraph-text text-sm align-center mx-auto w-3/4 pt-16"
+      class="mobile:font-decor text-grey-text text-sm align-center mx-auto p-14 sm:hidden"
     >
       <div class="mx-auto text-center">
         <h2>
@@ -206,7 +206,7 @@
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
-    <!-- quality paragraph text -->
+    <!-- desktop quality paragraph text -->
     <div class="mobile:hidden grid grid-cols-2">
       <div class="font-copy text-laser-blue p-16">
         <h2 class="text-5xl font-medium text-laser-blue">Quality</h2>
@@ -223,6 +223,27 @@
         </p>
       </div>
       <div class="flex flex-items-center pt-16 pl-16">
+        <img src="./assets/image-11.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- mobile quality paragraph text -->
+    <div class="mobile:grid sm:hidden">
+      <div class="font-copy text-laser-blue mt-5 p-5">
+        <h2 class="text-lg font-medium text-laser-blue">Quality</h2>
+        <p class="font-copy text-grey-text text-sm mt-4 w-full">
+          We haven't earned the respect of leading UK developers by cutting
+          corners. Instead, we take a belt and braces approach to every single
+          project, employing highly skilled and motivated workers chosen because
+          we know and trust them.
+        </p>
+        <p class="font-copy text-grey-text text-sm mt-4">
+          Our on-site teams are closely managed by one of our company directors
+          too, with a shorter chain of command giving us tighter control of our
+          meticulous standards.
+        </p>
+      </div>
+      <div class="flex flex-items-center p-5">
         <img src="./assets/image-11.jpg" alt="" />
       </div>
     </div>
@@ -262,8 +283,34 @@
       </div>
     </div>
 
+    <!-- mobile safety paragraph -->
+    <div class="mobile:grid sm:hidden">
+      <div class="font-copy text-laser-blue mt-5 p-5">
+        <h2 class="text-lg font-medium text-laser-blue">Safety</h2>
+        <p class="font-copy text-grey-text text-sm mt-4">
+          If we can't do a job safely, we won't do it - simple as that. Our
+          workers are loyal and deserve our protection, and that goes for our
+          clients' teams too. We've also got a reputation to protect, which is
+          why we're committed to maintaining our track record in safety.
+        </p>
+        <p class="font-copy text-grey-text text-sm mt-4">
+          We use an independent Health & Safety consultancy to oversee each job,
+          and we have full accreditation for every specialism we offer,
+          including ISO 45001 and certification for pipe laying at depth.
+        </p>
+      </div>
+      <div class="flex flex-items-center p-5">
+        <img src="./assets/image-12.jpg" alt="" />
+      </div>
+    </div>
+
     <!-- desktop border line -->
     <div class="mobile:hidden relative flex items-center mx-16 mt-16">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -293,14 +340,55 @@
       </div>
     </div>
 
+    <!-- mobile value paragraph -->
+    <div class="mobile:grid sm:hidden">
+      <div class="font-copy text-laser-blue mt-5 p-5">
+        <h2 class="text-lg font-medium text-laser-blue">Value</h2>
+        <p class="font-copy text-grey-text text-sm mt-4">
+          Value engineering is what we're all about. That means maximising our
+          clients' return on investment by minimising costs as far as we can,
+          without ever compromising on quality and safety. From rigorous
+          planning and real expertise in materials though to our
+          right-first-time philosophy: everything we do helps drive cost
+          efficiency.
+        </p>
+        <p class="font-copy text-grey-text text-sm mt-4">
+          Our uniquely agile way of working helps save money too, with mobile
+          and flexible teams that we can shrink or expand as a project unfolds.
+        </p>
+      </div>
+      <div class="flex flex-items-center p-5">
+        <img src="./assets/image-13.jpg" alt="" />
+      </div>
+    </div>
+
     <!-- desktop border line -->
     <div class="mobile:hidden relative flex items-center px-16 mt-16">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- desktop further information -->
     <div
       class="mobile:hidden font-copy text-grey-text leading-paragraph-text text-3xl align-center mx-auto w-3/4 pt-32"
+    >
+      <div class="mx-auto text-center">
+        <h2>
+          For further information please
+          <span class="font-medium"
+            ><a href="./contact.html">contact us.</a></span
+          >
+        </h2>
+      </div>
+    </div>
+
+    <!-- mobile further information -->
+    <div
+      class="mobile:font-copy text-grey-text text-sm align-center mx-auto w-3/4 p-16 sm:hidden"
     >
       <div class="mx-auto text-center">
         <h2>
@@ -337,6 +425,26 @@
             Embsay, Skipton, BD23 6QR
           </h3>
         </div>
+      </div>
+    </div>
+
+    <!-- mobile footer -->
+    <div class="mobile:grid bg-laser-blue border-laser-blue pb-10 pt-5 sm:hidden">
+      <div class="text-xs font-mono text-white absolute right-5">↑	Back to top</div>
+      <div class="font-mono text-white text-xs pt-10 p-5">
+        <img class="w-4/12" src="./assets/lcs- logomark.svg" alt="" />
+      </div>
+      <div class="font-mono text-white text-xs pl-5 pt-10">
+            Phone <br />+44 (0) 1756 709 018
+            <br /><br />Email Address<br />
+            enquiries@lasercs.co.uk<br /><br />Address<br />
+            Office 5, Embsay Mills,<br />
+            Embsay, Skipton, BD23 6QR
+          </h3>
+        </div>
+          <h3 class="text-white font-mono text-xs mt-20 pl-5">
+          Laser Construction 2022 <sup>©</sup>
+        </h3>
       </div>
     </div>
   </body>
