@@ -80,7 +80,7 @@
     </div>
 
     <!-- Mobile menu -->
-    <div class="mobile:flex justify-between w-full pt-5 items-center sm:hidden">
+    <div name ="top" class="mobile:flex justify-between w-full pt-5 items-center sm:hidden">
       <a href="/">
         <img
           class="pl-5 w-7/12"
@@ -88,7 +88,7 @@
           alt=""
         />
       </a>
-
+     
       <button
         id="dropdownDividerButton2"
         data-dropdown-toggle="dropdownDivider2"
@@ -98,11 +98,12 @@
         Menu
       </button>
 
+
       <!-- Dropdown menu -->
-      <div id="dropdownDivider2" class="hidden z-10 w-56 bg-white font-mono">
+      <div id="dropdownDivider2" class="hidden z-10 w-40 bg-white font-mono">
         <ul
-          class="text-laser-blue text-md pr-16"
-          aria-labelledby="dropdownDividerButton2"
+          class="text-laser-blue text-md pr-8"
+          aria-labelledby="dropdownDividerButton"
         >
           <li>
             <a href="./about.html" class="block py-1 px-8">About</a>
@@ -285,7 +286,7 @@
     <!-- mobile email subscription -->
     <div class="mobile:mt-24 w-3/4 mx-auto sm:hidden">
       <h2 class="font-decor text-grey-text border-laser-blue align-center text-sm text-center">
-        I would like to receive <span class="text-laser-blue">Laser Construction<sup>©</sup></span>
+        I would like to receive <span class="text-laser-blue font-medium">Laser Construction<sup>©</sup></span>
         updates, news and information on events.
       </h2>
       <div class="">
@@ -329,7 +330,7 @@
 
     <!-- mobile footer -->
     <div class="mobile:grid bg-laser-blue border-laser-blue pb-10 pt-5 sm:hidden mt-32">
-      <div class="text-xs font-mono text-white absolute right-5">↑	Back to top</div>
+      <a href="#top"><div class="text-xs font-mono text-white absolute right-5">↑	Back to top</div></a>
       <div class="font-mono text-white text-xs pt-10 p-5">
         <img class="w-4/12" src="./assets/lcs- logomark.svg" alt="" />
       </div>

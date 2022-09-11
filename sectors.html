@@ -80,7 +80,7 @@
     </div>
 
     <!-- Mobile menu -->
-    <div class="mobile:flex justify-between w-full pt-5 items-center sm:hidden">
+    <div name="top" class="mobile:flex justify-between w-full pt-5 items-center sm:hidden">
       <a href="/">
         <img
           class="pl-5 w-7/12"
@@ -88,7 +88,7 @@
           alt=""
         />
       </a>
-
+     
       <button
         id="dropdownDividerButton2"
         data-dropdown-toggle="dropdownDivider2"
@@ -98,10 +98,11 @@
         Menu
       </button>
 
+
       <!-- Dropdown menu -->
-      <div id="dropdownDivider2" class="hidden z-10 w-56 bg-white font-mono">
+      <div id="dropdownDivider2" class="hidden z-10 w-40 bg-white font-mono">
         <ul
-          class="text-laser-blue text-md pr-16"
+          class="text-laser-blue text-md pr-8"
           aria-labelledby="dropdownDividerButton"
         >
           <li>
@@ -240,10 +241,18 @@
       </div>
     </div>
 
+    <!-- desktop border line -->
+    <div class="mobile:hidden relative flex items-center mx-16 pt-5">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
 
+    <!-- desktop full image -->
+    <div class="mobile:hidden">
+      <img class="py-16 px-16" src="./assets/image-17.jpg" alt="" />
+    </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 pt-10">
+    <div class="mobile:hidden relative flex items-center mx-16 ">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -300,7 +309,7 @@
           overall return on investment.
         </h2>
       </div>
-    <div class="mobile:relative flex items-center mt-5 sm:hidden">
+    <div class="mobile:relative flex items-center mt-8 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
       <div class="font-medium text-grey-text border-laser-blue mt-5">
@@ -398,7 +407,7 @@
 
     <!-- mobile footer -->
     <div class="mobile:grid bg-laser-blue border-laser-blue pb-10 pt-5 mt-24 sm:hidden">
-      <div class="text-xs font-mono text-white absolute right-5">↑	Back to top</div>
+      <a href="#top"><div class="text-xs font-mono text-white absolute right-5">↑	Back to top</div></a>
       <div class="font-mono text-white text-xs pt-10 p-5">
         <img class="w-4/12" src="./assets/lcs- logomark.svg" alt="" />
       </div>

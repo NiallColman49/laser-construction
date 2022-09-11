@@ -46,6 +46,9 @@ module.exports = {
       },
       fontSize: {
         title: ["57px"],
+        titleLogo: ["60px"],
+        mobileTitle: ["27px"],
+        emailLarger: ["39px"],
       },
       lineHeight: {
         "title-text": "63px",
