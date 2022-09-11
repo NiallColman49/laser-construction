@@ -33,6 +33,21 @@
       format("svg");
 }
 
+@font-face {
+  font-family: "Maax Medium";
+  src: url("//db.onlinewebfonts.com/t/148fbec18900e43c3d7091d613ea227c.eot");
+  src: url("//db.onlinewebfonts.com/t/148fbec18900e43c3d7091d613ea227c.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/148fbec18900e43c3d7091d613ea227c.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/148fbec18900e43c3d7091d613ea227c.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/148fbec18900e43c3d7091d613ea227c.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/148fbec18900e43c3d7091d613ea227c.svg#Maax Medium")
+      format("svg");
+}
+
 .qual-grid {
   display: grid;
   height: 300px;
