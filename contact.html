@@ -77,6 +77,56 @@
         </ul>
       </div>
     </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile:flex justify-between w-full pt-5 items-center sm:hidden">
+      <a href="/">
+        <img
+          class="pl-5 w-7/12"
+          src="./assets/laser-blue-wordmark.svg"
+          alt=""
+        />
+      </a>
+
+      <button
+        id="dropdownDividerButton2"
+        data-dropdown-toggle="dropdownDivider2"
+        class="pr-5 text-laser-blue text-sm focus:outline-none font-mono"
+        type="button"
+      >
+        Menu
+      </button>
+
+      <!-- Dropdown menu -->
+      <div id="dropdownDivider2" class="hidden z-10 w-56 bg-white font-mono">
+        <ul
+          class="text-laser-blue text-md pr-16"
+          aria-labelledby="dropdownDividerButton2"
+        >
+          <li>
+            <a href="./about.html" class="block py-1 px-8">About</a>
+            <div class="relative flex items-center pl-8">
+              <div class="flex-grow border-t border-laser-blue"></div>
+            </div>
+          </li>
+          <li>
+            <a href="./sectors.html" class="block py-2 px-8">Sectors</a>
+            <div class="relative flex items-center pl-8">
+              <div class="flex-grow border-t border-laser-blue"></div>
+            </div>
+          </li>
+          <li>
+            <a href="./sustainability.html" class="block py-2 px-8">Sustain</a>
+            <div class="relative flex items-center pl-8">
+              <div class="flex-grow border-t border-laser-blue"></div>
+            </div>
+          </li>
+          <li>
+            <a href="./contact.html" class="block pb-8 py-2 px-8">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     
     <!-- desktop border line -->
     <div class="mobile:hidden relative flex items-center mx-16 pt-10">
