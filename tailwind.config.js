@@ -21,6 +21,7 @@ module.exports = {
       screens: {
         mobile: { max: "600px" },
         sm: "601px",
+        1280: { max: "1280px" },
       },
       colors: {
         "laser-green": "#3f4d52",
