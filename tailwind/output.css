@@ -6,6 +6,12 @@
 
 @import url(//db.onlinewebfonts.com/c/37b29158c68de167677fa4a3087d7188?family=Tiempos+Text+Regular);
 
+@import url(//db.onlinewebfonts.com/c/a9119a625b812f862b623442195661ff?family=Programme+Light);
+
+@import url(//db.onlinewebfonts.com/c/a4084c1b8de1174e1b0ba7dcaf5f0b02?family=Programme+Bold);
+
+@import url(//db.onlinewebfonts.com/c/615ebd2bd72c443cdfe3991532f0df4f?family=Programme+Regular);
+
 @font-face {
   font-family: "Copyright Klim Type Foundry";
 
@@ -54,6 +60,57 @@
     url("//db.onlinewebfonts.com/t/148fbec18900e43c3d7091d613ea227c.ttf")
       format("truetype"),
     url("//db.onlinewebfonts.com/t/148fbec18900e43c3d7091d613ea227c.svg#Maax Medium")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Programme Light";
+
+  src: url("//db.onlinewebfonts.com/t/a9119a625b812f862b623442195661ff.eot");
+
+  src: url("//db.onlinewebfonts.com/t/a9119a625b812f862b623442195661ff.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a9119a625b812f862b623442195661ff.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a9119a625b812f862b623442195661ff.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a9119a625b812f862b623442195661ff.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a9119a625b812f862b623442195661ff.svg#Programme Light")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Programme Bold";
+
+  src: url("//db.onlinewebfonts.com/t/a4084c1b8de1174e1b0ba7dcaf5f0b02.eot");
+
+  src: url("//db.onlinewebfonts.com/t/a4084c1b8de1174e1b0ba7dcaf5f0b02.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a4084c1b8de1174e1b0ba7dcaf5f0b02.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/a4084c1b8de1174e1b0ba7dcaf5f0b02.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/a4084c1b8de1174e1b0ba7dcaf5f0b02.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/a4084c1b8de1174e1b0ba7dcaf5f0b02.svg#Programme Bold")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Programme Regular";
+
+  src: url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.eot");
+
+  src: url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/615ebd2bd72c443cdfe3991532f0df4f.svg#Programme Regular")
       format("svg");
 }
 
@@ -1198,10 +1255,6 @@ input:checked + .toggle-bg{
   left: 0px;
 }
 
-.-bottom-8{
-  bottom: -2rem;
-}
-
 .right-5{
   right: 1.25rem;
 }
@@ -1286,6 +1339,10 @@ input:checked + .toggle-bg{
 
 .mt-4{
   margin-top: 1rem;
+}
+
+.mt-\[23rem\]{
+  margin-top: 23rem;
 }
 
 .mt-24{
@@ -1412,6 +1469,10 @@ input:checked + .toggle-bg{
   width: 58.333333%;
 }
 
+.w-40{
+  width: 10rem;
+}
+
 .w-2\/4{
   width: 50%;
 }
@@ -1442,22 +1503,6 @@ input:checked + .toggle-bg{
 
 .w-4{
   width: 1rem;
-}
-
-.w-8\/12{
-  width: 66.666667%;
-}
-
-.w-28{
-  width: 7rem;
-}
-
-.w-20{
-  width: 5rem;
-}
-
-.w-40{
-  width: 10rem;
 }
 
 .flex-1{
@@ -1498,6 +1543,16 @@ input:checked + .toggle-bg{
 
 .translate-y-full{
   --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-2{
+  --tw-translate-y: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-2{
+  --tw-translate-y: -0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1799,6 +1854,10 @@ input:checked + .toggle-bg{
   padding-right: 1.25rem;
 }
 
+.pr-8{
+  padding-right: 2rem;
+}
+
 .pt-8{
   padding-top: 2rem;
 }
@@ -1823,18 +1882,6 @@ input:checked + .toggle-bg{
   padding-top: 0.5rem;
 }
 
-.pr-2{
-  padding-right: 0.5rem;
-}
-
-.pr-8{
-  padding-right: 2rem;
-}
-
-.pr-10{
-  padding-right: 2.5rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1847,6 +1894,10 @@ input:checked + .toggle-bg{
   font-family: Maison Neue;
 }
 
+.font-primary{
+  font-family: Programme Light;
+}
+
 .font-decor{
   font-family: Copyright Klim Type Foundry;
 }
@@ -1857,6 +1908,10 @@ input:checked + .toggle-bg{
 
 .font-copy{
   font-family: Copyright Klim Type Foundry;
+}
+
+.font-primaryTitle{
+  font-family: Programme Bold;
 }
 
 .text-5xl{

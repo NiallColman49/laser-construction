@@ -15,6 +15,8 @@ module.exports = {
         decor: ["Copyright Klim Type Foundry"],
         mono: ["Maison Neue"],
         copy: ["Copyright Klim Type Foundry"],
+        primary: ["Programme Light"],
+        primaryTitle: ["Programme Bold"],
       },
       screens: {
         mobile: { max: "600px" },
