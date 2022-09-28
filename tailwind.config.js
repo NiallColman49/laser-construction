@@ -5,6 +5,11 @@ module.exports = {
     "./construction-home.html",
     "./about.html",
     "./node_modules/flowbite/**/*.js",
+    "./footer.html",
+    "./sectors.html",
+    "./sustainability.html",
+    "./gridtest.html",
+    "./contact.html",
   ],
   theme: {
     extend: {
@@ -55,7 +60,7 @@ module.exports = {
       },
       lineHeight: {
         "title-text": "63px",
-        "paragraph-text": "37px",
+        "paragraph-text": "33px",
       },
     },
   },

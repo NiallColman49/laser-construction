@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>construction homepage</title>
     <link rel="stylesheet" href="./tailwind/output.css" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" type="image/x-icon" href="./assets/laser-favicon.svg" />
     <script src="./node_modules/flowbite/dist/flowbite.js"></script>
     <script>
@@ -15,47 +15,52 @@
         let dd = String(today.getDate()).padStart(2, "0");
         let mm = String(today.getMonth() + 1).padStart(2, "0");
         let yyyy = today.getFullYear();
-        let time =
-          today.getHours() +
-          ":" +
-          today.getMinutes() +
-          ":" +
-          today.getSeconds();
+        let time = today.getHours() + ":" + today.getMinutes();
 
-        today = dd + "/" + mm + "/" + yyyy + "// " + time;
+        today = dd + "/" + mm + "/" + yyyy + " // " + time;
         document.getElementById("date").innerHTML = today;
       }
     </script>
   </head>
   <body onload="setDate()">
-
     <!-- desktop hero -->
     <div class="mobile:hidden bg-laser-blue h-725">
       <div class="w-11/12">
-        <h1 class="mobile:hidden font-decor text-title text-white pl-16 pt-10 leading-title-text">
-          <span class="text-laser-gold text-titleLogo font-medium">Laser Construction<sup class="sup">©</sup></span>
+        <h1
+          class="mobile:hidden font-decor text-title text-white pl-16 pt-10 leading-title-text"
+        >
+          <span class="text-laser-gold text-titleLogo font-medium"
+            >Laser Construction<sup class="sup">©</sup></span
+          >
           think the days of the traditional client-contractor relationship are
           over, and not a moment too soon.
         </h1>
       </div>
-      <h2 class="font-mono text-white p-16 mt-[23rem] inline-block tracking-tight 1280:hidden">
+      <h2
+        class="font-mono text-white p-16 mt-[23rem] inline-block tracking-tight 1280:hidden"
+      >
         Laser Construction
       </h2>
-      <img class="float-right inline pt-16 px-16 w-825 1280:hidden" src="./assets/image-7.jpg" alt="" />
+      <img
+        class="float-right inline pt-16 px-16 w-825 1280:hidden"
+        src="./assets/image-7.jpg"
+        alt=""
+      />
     </div>
 
-    <!-- mobile hero --> 
+    <!-- mobile hero -->
     <div name="top" class="mobile:bg-laser-blue h-775 sm:hidden">
       <div>
         <h1 class="font-decor text-2xl p-5 text-white leading-8">
-          <span class="text-laser-gold text-mobileTitle font-medium">Laser Construction<sup class="sup">©</sup></span> think the days of the traditional client-contractor relationship are
+          <span class="text-laser-gold text-mobileTitle font-medium"
+            >Laser Construction<sup class="sup">©</sup></span
+          >
+          think the days of the traditional client-contractor relationship are
           over, and not a moment too soon.
         </h1>
       </div>
       <img class="px-5 mt-24" src="./assets/image-7.jpg" alt="" />
-      <h2 class="font-mono text-sm mt-3 pl-5 text-white">
-        Laser Construction
-      </h2>
+      <h2 class="font-mono text-sm mt-3 pl-5 text-white">Laser Construction</h2>
     </div>
 
     <!-- desktop menu -->
@@ -119,7 +124,7 @@
           alt=""
         />
       </a>
-     
+
       <button
         id="dropdownDividerButton2"
         data-dropdown-toggle="dropdownDivider2"
@@ -128,7 +133,6 @@
       >
         Menu
       </button>
-
 
       <!-- Dropdown menu -->
       <div id="dropdownDivider2" class="hidden z-10 w-40 bg-white font-mono">
@@ -162,12 +166,12 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 pt-10">
+    <div class="mobile:hidden relative flex items-center pt-10">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -181,7 +185,7 @@
       />
     </div>
 
-    <!-- mobile centred image 1 -->
+    <!-- mobile centered image 1 -->
     <div class="mobile:flex justify-center items-center sm:hidden">
       <img class="mt-5 px-5" src="./assets/image-1.jpg" alt="" />
       <img
@@ -193,7 +197,11 @@
 
     <!-- desktop image 1 subtext -->
     <div class="mobile:hidden flex justify-between mt-5">
-      <h2 class="font-body text-grey-text border-laser-blue px-16">Sectors</h2>
+      <a href="./sectors.html">
+        <h2 class="font-body text-grey-text border-laser-blue px-16">
+          --> Sectors
+        </h2>
+      </a>
       <h2 class="font-body text-grey-text border-laser-blue px-16">
         Embsay Railway Station, 2019
       </h2>
@@ -201,23 +209,25 @@
 
     <!-- mobile image 1 subtext -->
     <div class="mobile:flex justify-between text-xs mt-2 sm:hidden">
-      <h2 class="font-body text-grey-text border-laser-blue px-5">Embsay Railway Station, 2019</h2>
+      <h2 class="font-body text-grey-text border-laser-blue px-5">
+        Embsay Railway Station, 2019
+      </h2>
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center px-16 pt-16">
+    <div class="mobile:hidden relative flex items-center pt-10">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-5 sm:hidden">
+    <div class="mobile:relative flex items-center mt-5 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- desktop paragraph 1 -->
     <div class="mobile:hidden grid grid-cols-2">
       <div class="font-primary text-grey-text border-laser-blue p-16 w-11/12">
-        <h2 class="text-2xl leading-paragraph-text">
+        <h2 class="text-xl leading-paragraph-text">
           Instead, we prefer to build lasting partnerships with a loyal group of
           clients: the kind of respected developers and constructors who value
           agile, adaptable multi-skilled teams they can count on for every
@@ -225,7 +235,11 @@
           stunning end results - for everyone. No wonder 80% of our clients come
           back for more.
         </h2>
-        <a href="/sustainability.html"><h2 class="font-mono text-laser-blueborder-laser-blue pt-72">-> Sustainability</h2></a>
+        <a href="/sustainability.html"
+          ><h2 class="font-mono text-laser-blueborder-laser-blue pt-72">
+            --> Sustainability
+          </h2></a
+        >
       </div>
       <div class="p-16"><img src="./assets/image-3.jpg" alt="" /></div>
     </div>
@@ -243,16 +257,22 @@
         </h2>
       </div>
       <div class="px-5 mt-2"><img src="./assets/image-3.jpg" alt="" /></div>
-     <a href="/sustainability.html"><h2 class="font-mono text-grey-text text-xs pl-5 border-laser-blue mt-2">-> Sustainability</h2></a>
+      <a href="/sustainability.html"
+        ><h2
+          class="font-mono text-grey-text text-xs pl-5 border-laser-blue mt-2"
+        >
+          -> Sustainability
+        </h2></a
+      >
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16">
+    <div class="mobile:hidden relative flex items-center">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
-     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-5 sm:hidden">
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center mt-5 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -260,7 +280,7 @@
     <div class="mobile:hidden grid grid-cols-2 border-laser-blue">
       <div class="pt-16 pl-16"><img src="./assets/image-4.jpg" alt="" /></div>
       <div class="font-primary text-grey-text border-laser-blue p-16 w-11/12">
-        <h2 class="text-2xl leading-paragraph-text">
+        <h2 class="text-xl leading-paragraph-text">
           <span class="font-medium text-laser-gold">ISO 45001. </span>Your
           people and reputation are in safe hands. As a proud holder of ISO
           45001, we officially satisfy the latest stringent international
@@ -276,25 +296,24 @@
     <div class="mobile:grid text-grey-text border-laser-blue sm:hidden">
       <div class="font-primary text-grey-text border-laser-blue p-5 w-11/12">
         <h2 class="text-sm">
-          <span class="font-sm text-laser-gold">ISO 45001. </span>Your
-          people and reputation are in safe hands. As a proud holder of ISO
-          45001, we officially satisfy the latest stringent international
-          standards in Occupational Health and Safety Management Systems. It's
-          your guarantee that we're committed to best practice: keeping workers
-          safer, abiding by the law, and delivering unbeatable performance for
-          our clients.
+          <span class="font-sm text-laser-gold">ISO 45001. </span>Your people
+          and reputation are in safe hands. As a proud holder of ISO 45001, we
+          officially satisfy the latest stringent international standards in
+          Occupational Health and Safety Management Systems. It's your guarantee
+          that we're committed to best practice: keeping workers safer, abiding
+          by the law, and delivering unbeatable performance for our clients.
         </h2>
       </div>
       <div class="p-5"><img src="./assets/image-4.jpg" alt="" /></div>
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center pt-8 mx-16">
+    <div class="mobile:hidden relative flex items-center pt-16">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
-     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 sm:hidden">
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -308,27 +327,33 @@
       <img class="mx-auto" src="./assets/image-8.jpg" alt="" />
     </div>
 
-        <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16">
+    <!-- desktop border line -->
+    <div class="mobile:hidden relative flex items-center">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
-     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 sm:hidden">
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- desktop email subscription -->
     <div class="mobile:hidden mt-32 w-3/5 mx-auto">
-      <h2 class="font-decor text-grey-text border-laser-blue align-center text-4xl text-center">
-        I would like to receive <span class="font-medium text-laser-blue text-emailLarger">Laser Construction<sup>©</sup></span> updates, news and information on events.
+      <h2
+        class="font-decor text-grey-text border-laser-blue align-center text-4xl text-center"
+      >
+        I would like to receive
+        <span class="font-medium text-laser-blue text-emailLarger"
+          >Laser Construction<sup>©</sup></span
+        >
+        updates, news and information on events.
       </h2>
       <div class="mt-12">
         <input
           type="email"
           id="email"
           class="border border-gray-300 text-grey-text font-mono text-lg focus:bg-laser-blueborder-laser-blue focus:border-laser-blue block w-4/6 p-5 mt-4 mx-auto"
-          placeholder="enter email address -->"
+          placeholder="Enter email address -->"
           required
         />
       </div>
@@ -336,8 +361,13 @@
 
     <!-- mobile email subscription -->
     <div class="mobile:mt-24 w-3/4 mx-auto sm:hidden">
-      <h2 class="font-decor text-grey-text border-laser-blue align-center text-sm text-center">
-        I would like to receive <span class="font-medium text-laser-blue text-sm">Laser Construction<sup>©</sup></span>
+      <h2
+        class="font-decor text-grey-text border-laser-blue align-center text-sm text-center"
+      >
+        I would like to receive
+        <span class="font-medium text-laser-blue text-sm"
+          >Laser Construction<sup>©</sup></span
+        >
         updates, news and information on events.
       </h2>
       <div class="">
@@ -352,46 +382,65 @@
     </div>
 
     <!-- desktop footer -->
-    <div class="mobile:hidden grid grid-cols-3 gap-4 bg-laser-blue border-laser-blue pb-8 pt-8 mt-32">
-      <div class="col-span-2 font-mono text-white text-3xl p-16">
-        <img class="w-1/4" src="./assets/lcs- logomark.svg" alt="" />
-        <h3 class="text-white font-mono text-sm mt-8 pt-28">
-          <sup>©</sup> Laser Construction 2022
+    <section
+      class="grid grid-cols-4 grid-rows-2 h-[450px] border-t border-b border-laser-blue mt-32"
+    >
+      <div>
+        <img class="h-60 p-14" src="./assets/laser-c-rotated.svg" alt="" />
+      </div>
+      <div class="pt-14">
+        <h3 class="font-primaryTitle">Address</h3>
+        <h3 class="font-mono">
+          Office 5, Embsay Mills,<br />
+          Embsay, Skipton, BD23 6QR
         </h3>
       </div>
-      <div class="...">
-        <div class="leading-7 pt-16">
-          <h3 class="font-mono text-white">
-            <span class="font-mono">Phone </span><br />+44 (0) 1756 709 018
-            <br /><span class="font-mono"> <h3>Email Address</h3></span>
-            enquiries@lasercs.co.uk
-          </h3>
-        </div>
-        <div class="leading-7">
-          <h3 class="font-mono text-white pt-16">
-            <span class="font-mono">Address</span><br />
-            Office 5, Embsay Mills,<br />
-            Embsay, Skipton, BD23 6QR
-          </h3>
-        </div>
+      <div class="pt-14">
+        <h3 class="font-primaryTitle">Telephone</h3>
+        <h3 class="font-mono pt-2">+44 (0) 1756 709 018</h3>
+        <h3 class="font-primaryTitle pt-5">Email Address</h3>
+        <h3 class="font-mono pt-2">enquiries@lasercs.co.uk</h3>
       </div>
-    </div>
+      <div class="pt-14 border-l border-laser-blue row-span-2 pl-10">
+        <h3 class="font-primaryTitle">
+          Sign-up to our newsletter &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle mt-28">
+          LinkedIn &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle">
+          Facebook &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h5 class="font-mono mt-36 text-sm">
+          <sup>©</sup>&nbsp;Laser Construction 2022
+        </h5>
+      </div>
+      <div class="border-t border-laser-blue">
+        <img class="p-14 w-96" src="./assets/blue-icons.svg" alt="" />
+      </div>
+      <div class="border-t border-laser-blue"></div>
+      <div class="border-t border-laser-blue"></div>
+    </section>
 
     <!-- mobile footer -->
-    <div class="mobile:grid bg-laser-blue border-laser-blue pb-10 pt-5 mt-28 sm:hidden">
-      <a href="#top"><div class="text-xs font-mono text-white absolute right-5">↑	Back to top</div></a>
+    <div
+      class="mobile:grid bg-laser-blue border-laser-blue pb-10 pt-5 mt-28 sm:hidden"
+    >
+      <a href="#top"
+        ><div class="text-xs font-mono text-white absolute right-5">
+          ↑ Back to top
+        </div></a
+      >
       <div class="font-mono text-white text-xs pt-10 p-5">
         <img class="w-4/12" src="./assets/lcs- logomark.svg" alt="" />
       </div>
       <div class="font-mono text-white text-xs pl-5 pt-10">
-            Phone <br />+44 (0) 1756 709 018
-            <br /><br />Email Address<br />
-            enquiries@lasercs.co.uk<br /><br />Address<br />
-            Office 5, Embsay Mills,<br />
-            Embsay, Skipton, BD23 6QR
-          </h3>
-        </div>
-          <h3 class="text-white font-mono text-xs mt-20 pl-5">
+        Phone <br />+44 (0) 1756 709 018 <br /><br />Email Address<br />
+        enquiries@lasercs.co.uk<br /><br />Address<br />
+        Office 5, Embsay Mills,<br />
+        Embsay, Skipton, BD23 6QR
+
+        <h3 class="text-white font-mono text-xs mt-20 pl-5">
           <sup>©</sup> Laser Construction 2022
         </h3>
       </div>

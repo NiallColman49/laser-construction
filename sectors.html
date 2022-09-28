@@ -12,22 +12,17 @@
       function setDate() {
         let today = new Date();
         let dd = String(today.getDate()).padStart(2, "0");
-        let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+        let mm = String(today.getMonth() + 1).padStart(2, "0");
         let yyyy = today.getFullYear();
-        let time =
-          today.getHours() +
-          ":" +
-          today.getMinutes() +
-          ":" +
-          today.getSeconds();
+        let time = today.getHours() + ":" + today.getMinutes();
 
-        today = dd + "/" + mm + "/" + yyyy + "// " + time;
+        today = dd + "/" + mm + "/" + yyyy + " // " + time;
         document.getElementById("date").innerHTML = today;
       }
     </script>
   </head>
   <body onload="setDate()">
-        <!-- desktop menu -->
+    <!-- desktop menu -->
     <div class="mobile:hidden flex justify-between w-full pt-10 items-center">
       <a href="/">
         <img
@@ -80,7 +75,10 @@
     </div>
 
     <!-- Mobile menu -->
-    <div name="top" class="mobile:flex justify-between w-full pt-5 items-center sm:hidden">
+    <div
+      name="top"
+      class="mobile:flex justify-between w-full pt-5 items-center sm:hidden"
+    >
       <a href="/">
         <img
           class="pl-5 w-7/12"
@@ -88,7 +86,7 @@
           alt=""
         />
       </a>
-     
+
       <button
         id="dropdownDividerButton2"
         data-dropdown-toggle="dropdownDivider2"
@@ -97,7 +95,6 @@
       >
         Menu
       </button>
-
 
       <!-- Dropdown menu -->
       <div id="dropdownDivider2" class="hidden z-10 w-40 bg-white font-mono">
@@ -131,7 +128,7 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 pt-10">
+    <div class="mobile:hidden relative flex items-center pt-10">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -157,19 +154,19 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16">
+    <div class="mobile:hidden relative flex items-center">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- desktop by definition -->
     <div class="mobile:hidden grid grid-cols-2">
       <div class="font-primary text-grey-text border-laser-blue p-16 w-11/12">
-        <h2 class="text-2xl leading-paragraph-text">
+        <h2 class="text-xl leading-paragraph-text">
           By definition, commercial projects need rigorous project management to
           achieve maximum return on investment. Our close-knit teams, excellent
           communication and director-level project management keep us running
@@ -182,7 +179,9 @@
         </div>
       </div>
       <div class="p-16">
-        <h2 class="text-xl font-mono text-grey-text pr-16">
+        <h2
+          class="text-xl leading-paragraph-text font-primary pr-16 text-grey-text"
+        >
           A rapidly growing area of our work is with clients addressing issues
           like climate change and extreme weather. From flood prevention to
           asset repair, we've got the expertise and resources to take on a wide
@@ -190,7 +189,9 @@
           locations or areas at risk. We've got relevant specialist skills here
           too, like our certification for pipe laying at depth.
         </h2>
-        <h2 class="text-xl font-mono text-grey-text pt-16 pr-16">
+        <h2
+          class="text-xl leading-paragraph-text font-primary pt-16 pr-16 text-grey-text"
+        >
           The way the world lives is changing, fast. As a responsible,
           forward-thinking business we've quickly embraced the move towards
           greener utilities and greater sustainability. Today, our capabilities
@@ -213,9 +214,9 @@
           through to busy retail developments.
         </h2>
 
-    <div class="mobile:relative flex items-center mt-5 sm:hidden">
-      <div class="flex-grow border-t border-laser-blue"></div>
-    </div>
+        <div class="mobile:relative flex items-center mt-5 sm:hidden">
+          <div class="flex-grow border-t border-laser-blue"></div>
+        </div>
 
         <div class="pt-10">
           <h2 class="font-medium text-laser-blue">Commercial</h2>
@@ -242,7 +243,7 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 pt-5">
+    <div class="mobile:hidden relative flex items-center pt-5">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -252,19 +253,19 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 ">
+    <div class="mobile:hidden relative flex items-center">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- desktop we have been working -->
     <div class="mobile:hidden grid grid-cols-3 gap-4 p-16 mt-4 mb-4">
       <div class="font-primary text-grey-text border-laser-blue">
-        <h2 class="text-2xl">
+        <h2 class="text-xl leading-paragraph-text">
           We've been working with respected residential developers from day one,
           on everything from roads and sewers to full shell constructions. Like
           every project we contribute to, we provide and manage highly motivated
@@ -273,8 +274,8 @@
           overall return on investment.
         </h2>
       </div>
-      <div class="font-mono text-grey-text border-laser-blue pl-16">
-        <h2 class="text-xl">
+      <div class="border-laser-blue pl-16">
+        <h2 class="text-xl leading-paragraph-text font-primary text-grey-text">
           Our work in educational settings factors in each of this sector's
           special challenges: tighter budgets, shorter timescales, and potential
           extra considerations around issues like health and safety. <br />
@@ -284,8 +285,8 @@
           partners, for their clients, and for staff and students too.
         </h2>
       </div>
-      <div class="font-mono text-grey-text border-laser-blue pl-16">
-        <h2 class="text-xl">
+      <div class="border-laser-blue pl-16">
+        <h2 class="text-xl leading-paragraph-text font-primary text-grey-text">
           Our reputation and credentials have earned us the trust of local
           authorities, and we've become an integral part of highways engineering
           projects across the north and beyond.<br />
@@ -309,9 +310,9 @@
           overall return on investment.
         </h2>
       </div>
-    <div class="mobile:relative flex items-center mt-8 sm:hidden">
-      <div class="flex-grow border-t border-laser-blue"></div>
-    </div>
+      <div class="mobile:relative flex items-center mt-8 sm:hidden">
+        <div class="flex-grow border-t border-laser-blue"></div>
+      </div>
       <div class="font-medium text-grey-text border-laser-blue mt-5">
         <h2 class="text-sm">
           Our work in educational settings factors in each of this sector's
@@ -330,34 +331,37 @@
           projects across the north and beyond.<br />
         </h2>
 
-      <div class="mobile:relative flex items-center mt-5 sm:hidden">
-       <div class="flex-grow border-t border-laser-blue"></div>
-      </div>
+        <div class="mobile:relative flex items-center mt-5 sm:hidden">
+          <div class="flex-grow border-t border-laser-blue"></div>
+        </div>
 
-        <div class="font-copy text-grey-text text-sm p-10 mt-24 text-center m-auto">          
+        <div
+          class="font-copy text-grey-text text-sm p-10 mt-24 text-center m-auto"
+        >
           From bridge repairs to road renewals, our handpicked teams have the
           skills and equipment to work quickly, safely and to stringent
-          standards, in even the most challenging conditions.</div>
+          standards, in even the most challenging conditions.
+        </div>
       </div>
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 pt-10">
+    <div class="mobile:hidden relative flex items-center pt-10">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-20 sm:hidden">
+    <div class="mobile:relative flex items-center mt-20 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile full image -->
     <div class="mobile:relative px-5 mt-5 sm:hidden">
-      <img src="./assets/image-17.jpg" alt="">
+      <img src="./assets/image-17.jpg" alt="" />
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-5 sm:hidden">
+    <div class="mobile:relative flex items-center mt-5 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -380,47 +384,66 @@
     </div>
 
     <!-- desktop footer -->
-    <div class="mobile:hidden grid grid-cols-3 gap-4 bg-laser-blue border-laser-blue pb-8 pt-8 mt-36">
-      <div class="col-span-2 font-mono text-white text-3xl p-16">
-        <img class="w-1/4" src="./assets/lcs- logomark.svg" alt="" />
-        <h3 class="text-white font-mono text-sm mt-8 pt-28">
-          <sup>©</sup> Laser Construction 2022 
+    <section
+      class="grid grid-cols-4 grid-rows-2 h-[450px] border-t border-b border-laser-blue mt-36"
+    >
+      <div>
+        <img class="h-60 p-14" src="./assets/laser-c-rotated.svg" alt="" />
+      </div>
+      <div class="pt-14">
+        <h3 class="font-primaryTitle">Address</h3>
+        <h3 class="font-mono">
+          Office 5, Embsay Mills,<br />
+          Embsay, Skipton, BD23 6QR
         </h3>
       </div>
-      <div class="...">
-        <div class="leading-7 pt-16">
-          <h3 class="font-mono text-white">
-            <span class="font-mono">Phone </span><br />+44 (0) 1756 709 018
-            <br /><span class="font-mono"> <h3>Email Address</h3></span>
-            enquiries@lasercs.co.uk
-          </h3>
-        </div>
-        <div class="leading-7">
-          <h3 class="font-mono text-white pt-16">
-            <span class="font-mono">Address</span><br />
-            Office 5, Embsay Mills,<br />
-            Embsay, Skipton, BD23 6QR
-          </h3>
-        </div>
+      <div class="pt-14">
+        <h3 class="font-primaryTitle">Telephone</h3>
+        <h3 class="font-mono pt-2">+44 (0) 1756 709 018</h3>
+        <h3 class="font-primaryTitle pt-5">Email Address</h3>
+        <h3 class="font-mono pt-2">enquiries@lasercs.co.uk</h3>
       </div>
-    </div>
+      <div class="pt-14 border-l border-laser-blue row-span-2 pl-10">
+        <h3 class="font-primaryTitle">
+          Sign-up to our newsletter &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle mt-28">
+          LinkedIn &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle">
+          Facebook &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h5 class="font-mono mt-36 text-sm">
+          <sup>©</sup>&nbsp;Laser Construction 2022
+        </h5>
+      </div>
+      <div class="border-t border-laser-blue">
+        <img class="p-14 w-96" src="./assets/blue-icons.svg" alt="" />
+      </div>
+      <div class="border-t border-laser-blue"></div>
+      <div class="border-t border-laser-blue"></div>
+    </section>
 
     <!-- mobile footer -->
-    <div class="mobile:grid bg-laser-blue border-laser-blue pb-10 pt-5 mt-24 sm:hidden">
-      <a href="#top"><div class="text-xs font-mono text-white absolute right-5">↑	Back to top</div></a>
+    <div
+      class="mobile:grid bg-laser-blue border-laser-blue pb-10 pt-5 mt-24 sm:hidden"
+    >
+      <a href="#top"
+        ><div class="text-xs font-mono text-white absolute right-5">
+          ↑ Back to top
+        </div></a
+      >
       <div class="font-mono text-white text-xs pt-10 p-5">
         <img class="w-4/12" src="./assets/lcs- logomark.svg" alt="" />
       </div>
       <div class="font-mono text-white text-xs pl-5 pt-10">
-            Phone <br />+44 (0) 1756 709 018
-            <br /><br />Email Address<br />
-            enquiries@lasercs.co.uk<br /><br />Address<br />
-            Office 5, Embsay Mills,<br />
-            Embsay, Skipton, BD23 6QR
-          </h3>
-        </div>
-          <h3 class="text-white font-mono text-xs mt-20 pl-5">
-          <sup>©</sup> Laser Construction 2022 
+        Phone <br />+44 (0) 1756 709 018 <br /><br />Email Address<br />
+        enquiries@lasercs.co.uk<br /><br />Address<br />
+        Office 5, Embsay Mills,<br />
+        Embsay, Skipton, BD23 6QR
+
+        <h3 class="text-white font-mono text-xs mt-20 pl-5">
+          <sup>©</sup> Laser Construction 2022
         </h3>
       </div>
     </div>

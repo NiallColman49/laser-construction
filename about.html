@@ -14,16 +14,11 @@
       function setDate() {
         let today = new Date();
         let dd = String(today.getDate()).padStart(2, "0");
-        let mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+        let mm = String(today.getMonth() + 1).padStart(2, "0");
         let yyyy = today.getFullYear();
-        let time =
-          today.getHours() +
-          ":" +
-          today.getMinutes() +
-          ":" +
-          today.getSeconds();
+        let time = today.getHours() + ":" + today.getMinutes();
 
-        today = dd + "/" + mm + "/" + yyyy + "// " + time;
+        today = dd + "/" + mm + "/" + yyyy + " // " + time;
         document.getElementById("date").innerHTML = today;
       }
     </script>
@@ -82,7 +77,10 @@
     </div>
 
     <!-- Mobile menu -->
-    <div name="top" class="mobile:flex justify-between w-full pt-5 items-center sm:hidden">
+    <div
+      name="top"
+      class="mobile:flex justify-between w-full pt-5 items-center sm:hidden"
+    >
       <a href="/">
         <img
           class="pl-5 w-7/12"
@@ -90,7 +88,7 @@
           alt=""
         />
       </a>
-     
+
       <button
         id="dropdownDividerButton2"
         data-dropdown-toggle="dropdownDivider2"
@@ -99,7 +97,6 @@
       >
         Menu
       </button>
-
 
       <!-- Dropdown menu -->
       <div id="dropdownDivider2" class="hidden z-10 w-40 bg-white font-mono">
@@ -133,12 +130,12 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 pt-10">
+    <div class="mobile:hidden relative flex items-center pt-10">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -163,12 +160,12 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16">
+    <div class="mobile:hidden relative flex items-center">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -199,12 +196,12 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 pt-16">
+    <div class="mobile:hidden relative flex items-center pt-16">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -212,13 +209,13 @@
     <div class="mobile:hidden grid grid-cols-2">
       <div class="font-primary text-laser-blue p-16">
         <h2 class="text-5xl font-primaryTitle text-laser-blue">Quality</h2>
-        <p class="text-grey-text text-2xl mt-16">
+        <p class="text-grey-text text-xl mt-16">
           We haven't earned the respect of leading UK developers by cutting
           corners. Instead, we take a belt and braces approach to every single
           project, employing highly skilled and motivated workers chosen because
           we know and trust them.
         </p>
-        <p class="text-grey-text text-2xl mt-16">
+        <p class="text-grey-text text-xl mt-16">
           Our on-site teams are closely managed by one of our company directors
           too, with a shorter chain of command giving us tighter control of our
           meticulous standards.
@@ -239,7 +236,7 @@
           project, employing highly skilled and motivated workers chosen because
           we know and trust them.
         </p>
-        <p class=" text-grey-text text-sm mt-4">
+        <p class="text-grey-text text-sm mt-4">
           Our on-site teams are closely managed by one of our company directors
           too, with a shorter chain of command giving us tighter control of our
           meticulous standards.
@@ -251,12 +248,12 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 mt-16">
+    <div class="mobile:hidden relative flex items-center mt-16">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -267,17 +264,13 @@
       </div>
       <div class="font-primary text-laser-blue p-16">
         <h2 class="text-5xl font-primaryTitle text-laser-blue">Safety</h2>
-        <p
-          class="text-grey-text text-2xl mt-16 leading-paragraph-text"
-        >
+        <p class="text-grey-text text-xl mt-16 leading-paragraph-text">
           If we can't do a job safely, we won't do it - simple as that. Our
           workers are loyal and deserve our protection, and that goes for our
           clients' teams too. We've also got a reputation to protect, which is
           why we're committed to maintaining our track record in safety.
         </p>
-        <p
-          class="text-grey-text text-2xl mt-16 leading-paragraph-text"
-        >
+        <p class="text-grey-text text-xl mt-16 leading-paragraph-text">
           We use an independent Health & Safety consultancy to oversee each job,
           and we have full accreditation for every specialism we offer,
           including ISO 45001 and certification for pipe laying at depth.
@@ -307,12 +300,12 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center mx-16 mt-16">
+    <div class="mobile:hidden relative flex items-center mt-16">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -320,9 +313,7 @@
     <div class="mobile:hidden grid grid-cols-2">
       <div class="font-primary text-laser-blue p-16">
         <h2 class="text-5xl font-primaryTitle text-laser-blue">Value</h2>
-        <p
-          class="text-grey-text text-2xl mt-16 leading-paragraph-text"
-        >
+        <p class="text-grey-text text-xl mt-16 leading-paragraph-text">
           Value engineering is what we're all about. That means maximising our
           clients' return on investment by minimising costs as far as we can,
           without ever compromising on quality and safety. From rigorous
@@ -330,9 +321,7 @@
           right-first-time philosophy: everything we do helps drive cost
           efficiency.
         </p>
-        <p
-          class="text-grey-text text-2xl mt-16 leading-paragraph-text"
-        >
+        <p class="text-grey-text text-xl mt-16 leading-paragraph-text">
           Our uniquely agile way of working helps save money too, with mobile
           and flexible teams that we can shrink or expand as a project unfolds.
         </p>
@@ -365,12 +354,12 @@
     </div>
 
     <!-- desktop border line -->
-    <div class="mobile:hidden relative flex items-center px-16 mt-16">
+    <div class="mobile:hidden relative flex items-center mt-16">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-2 sm:hidden">
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -381,7 +370,9 @@
       <div class="mx-auto text-center">
         <h2>
           For further information please
-          <a class="text-laser-blue font-medium" href="./contact.html">contact us.</a>
+          <a class="text-laser-blue font-medium" href="./contact.html"
+            >contact us.</a
+          >
         </h2>
       </div>
     </div>
@@ -401,52 +392,65 @@
     </div>
 
     <!-- desktop footer -->
-    <div
-      class="mobile:hidden grid grid-cols-3 gap-4 bg-laser-blue border-laser-blue pb-8 pt-8 mt-36"
+    <section
+      class="grid grid-cols-4 grid-rows-2 h-[450px] border-t border-b border-laser-blue mt-32"
     >
-      <div class="col-span-2 font-mono text-white text-3xl p-16">
-        <img class="w-1/4" src="./assets/lcs- logomark.svg" alt="" />
-        <h3 class="text-white font-mono text-sm mt-8 pt-28">
-          <sup>©</sup> Laser Construction 2022
+      <div>
+        <img class="h-60 p-14" src="./assets/laser-c-rotated.svg" alt="" />
+      </div>
+      <div class="pt-14">
+        <h3 class="font-primaryTitle">Address</h3>
+        <h3 class="font-mono">
+          Office 5, Embsay Mills,<br />
+          Embsay, Skipton, BD23 6QR
         </h3>
       </div>
-      <div class="...">
-        <div class="leading-7 pt-16">
-          <h3 class="font-mono text-white">
-            <span class="font-mono">Phone </span><br />+44 (0) 1756 709 018
-            <br /><span class="font-mono"> <h3>Email Address</h3></span>
-            enquiries@lasercs.co.uk
-          </h3>
-        </div>
-        <div class="leading-7">
-          <h3 class="font-mono text-white pt-16">
-            <span class="font-mono">Address</span><br />
-            Office 5, Embsay Mills,<br />
-            Embsay, Skipton, BD23 6QR
-          </h3>
-        </div>
+      <div class="pt-14">
+        <h3 class="font-primaryTitle">Telephone</h3>
+        <h3 class="font-mono pt-2">+44 (0) 1756 709 018</h3>
+        <h3 class="font-primaryTitle pt-5">Email Address</h3>
+        <h3 class="font-mono pt-2">enquiries@lasercs.co.uk</h3>
       </div>
-    </div>
+      <div class="pt-14 border-l border-laser-blue row-span-2 pl-10">
+        <h3 class="font-primaryTitle">
+          Sign-up to our newsletter &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle mt-28">
+          LinkedIn &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle">
+          Facebook &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h5 class="font-mono mt-36 text-sm">
+          <sup>©</sup>&nbsp;Laser Construction 2022
+        </h5>
+      </div>
+      <div class="border-t border-laser-blue">
+        <img class="p-14 w-96" src="./assets/blue-icons.svg" alt="" />
+      </div>
+      <div class="border-t border-laser-blue"></div>
+      <div class="border-t border-laser-blue"></div>
+    </section>
 
     <!-- mobile footer -->
-    <div class="mobile:grid bg-laser-blue border-laser-blue pb-10 pt-5 sm:hidden">
-      <div class="text-xs font-mono text-white absolute right-5">↑	Back to top</div>
+    <div
+      class="mobile:grid bg-laser-blue border-laser-blue pb-10 pt-5 sm:hidden"
+    >
+      <div class="text-xs font-mono text-white absolute right-5">
+        ↑ Back to top
+      </div>
       <div class="font-mono text-white text-xs pt-10 p-5">
         <img class="w-4/12" src="./assets/lcs- logomark.svg" alt="" />
       </div>
       <div class="font-mono text-white text-xs pl-5 pt-10">
-            Phone <br />+44 (0) 1756 709 018
-            <br /><br />Email Address<br />
-            enquiries@lasercs.co.uk<br /><br />Address<br />
-            Office 5, Embsay Mills,<br />
-            Embsay, Skipton, BD23 6QR
-          </h3>
-        </div>
-          <h3 class="text-white font-mono text-xs mt-20 pl-5">
+        Phone <br />+44 (0) 1756 709 018 <br /><br />Email Address<br />
+        enquiries@lasercs.co.uk<br /><br />Address<br />
+        Office 5, Embsay Mills,<br />
+        Embsay, Skipton, BD23 6QR
+        <h3 class="text-white font-mono text-xs mt-20 pl-5">
           <sup>©</sup> Laser Construction 2022
         </h3>
       </div>
     </div>
-    
   </body>
 </html>
