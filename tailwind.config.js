@@ -34,6 +34,11 @@ module.exports = {
         "laser-blue": "#1c2030",
         "grey-text": "#a9a9a9",
       },
+      minHeight: {
+        75: "75vh",
+        10: "10vh",
+        15: "25vh",
+      },
       height: {
         70: "70vh",
       },
