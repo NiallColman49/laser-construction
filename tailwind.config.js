@@ -30,7 +30,7 @@ module.exports = {
       },
       colors: {
         "laser-green": "#3f4d52",
-        "laser-gold": "#b17938",
+        "laser-gold": "#DED6CF",
         "laser-blue": "#1c2030",
         "grey-text": "#a9a9a9",
       },
