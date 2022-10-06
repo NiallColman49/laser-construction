@@ -4,136 +4,480 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>construction homepage</title>
     <link rel="stylesheet" href="./tailwind/output.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" type="image/x-icon" href="./assets/laser-favicon.svg" />
-    <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <script>
+      function setDate() {
+        let today = new Date();
+        let dd = String(today.getDate()).padStart(2, "0");
+        let mm = String(today.getMonth() + 1).padStart(2, "0");
+        let yyyy = today.getFullYear();
+        let time = today.getHours() + ":" + today.getMinutes();
+
+        today = dd + "/" + mm + "/" + yyyy + " // " + time;
+        document.getElementById("date").innerHTML = today;
+      }
+    </script>
   </head>
-  <body class="bg-laser-blue text-white">
-    <!-- desktop main container -->
-    <!-- <div
-      class="mobile:hidden grid grid-cols-2 items-center h-70 justify-items-center p-5 mt-32"
-    >
-      <div>
-        <h1 class="text-5xl font-medium text-white">
-          Construction <br />Management <br />Delivery
+  <body onload="setDate()">
+    <!-- desktop hero -->
+    <div class="mobile:hidden bg-laser-blue h-725">
+      <div class="w-11/12">
+        <h1
+          class="mobile:hidden font-decor text-title text-white pl-16 pt-10 leading-title-text"
+        >
+          <span class="text-laser-gold text-titleLogo font-medium"
+            >Laser Construction<sup class="sup">©</sup></span
+          >
+          think the days of the traditional client-contractor relationship are
+          over, and not a moment too soon.
         </h1>
-        <a class="float-right" href="/construction-home.html">
-          <img
-            class="w-full mt-14"
-            src="./assets/white-arrow-icon.svg"
-            alt=""
-          />
-        </a>
-        <h3 class="text-laser-gold font-mono text-sm mt-36">
-          Construction Services
-        </h3>
       </div>
-      <div>
-        <h1 class="text-5xl font-medium text-white">
-          Plant & Tool <br />Hire Services <br />Purchasing
-        </h1>
-        <a class="float-right" href="/construction-home.html">
-          <img
-            class="w-full mt-14"
-            src="./assets/white-arrow-icon.svg"
-            alt=""
-          />
-        </a>
-        <h3 class="text-laser-gold font-mono text-sm mt-36">Hire Services</h3>
-      </div>
-    </div> -->
-    <!-- <section class="h-[12vh] border-b border-laser-blue">
-      <div class="font-mono text-center pt-8">
-        <h3>
-          We are a specialist main contractor leading a new way for the
-          industry, as well as being a one-stop hire facility.
-        </h3>
-      </div>
-    </section>
-
-    <section class="block lg:grid grid-cols-2 h-[90vh]">
-      <a
-        class="lg:border-r border-laser-blue h-[100vh]"
-        href="./construction-home.html"
+      <h2
+        class="font-mono text-white p-16 mt-[23rem] inline-block tracking-tight 1280:hidden"
       >
-        <div class="border-laser-blue text-grey-text">
-          <h1 class="text-6xl pl-20 pt-24 font-primaryTitle">
-            Construction <br />Management <br />Delivery
-          </h1>
-          <img
-            class="w-1/3 align-baseline pr-20 mt-24 float-right"
-            src="./assets/blue-arrow-icon.svg"
-            alt=""
-          />
-          <img
-            class="pl-20 w-1/2 mt-60"
-            src="./assets/laser-blue-wordmark.svg"
-            alt=""
-          />
-        </div>
-      </a>
-
-      <a href="/">
-        <div class="border-laser-blue text-grey-text">
-          <h1 class="text-6xl pl-20 pt-24 font-primaryTitle">
-            Plant & Tool <br />Hire Services <br />Purchasing
-          </h1>
-          <img
-            class="w-1/3 align-baseline pr-20 mt-24 float-right"
-            src="./assets/blue-arrow-icon.svg"
-            alt=""
-          />
-          <img
-            class="pl-[88px] w-1/2 mt-60"
-            src="./assets/laser-hire-logo_1.svg"
-            alt=""
-          />
-        </div>
-      </a>
-    </section> -->
-    <div class="">
-      <header class="h-40 flex justify-between items-center px-20">
-        <div>
-          <img class="w-80" src="./assets/index-page-wordmark.svg" alt="" />
-        </div>
-        <div>
-          <img
-            class="hidden md:flex w-44"
-            src="./assets/index-page-letters.svg"
-            alt=""
-          />
-        </div>
-      </header>
+        Laser Construction
+      </h2>
+      <img
+        class="float-right inline pt-16 px-16 w-825 1280:hidden"
+        src="./assets/edited-images/image-5.jpg"
+        alt=""
+      />
     </div>
 
-    <div class="border-t-2 border-white">
-      <h1
-        class="font-primary text-5xl px-20 pt-12 leading-tight tracking-normal"
-      >
-        When you commission a construction or hire partner to support your
-        project, you need to know that their partners can be trusted too. Our
-        directors carefully choose every contractor and consultant we hire, and
-        our supply chain only includes specialists whose own high standards will
-        do ours and yours justice. We stake our reputation on it.
-      </h1>
+    <!-- mobile hero -->
+    <div name="top" class="mobile:bg-laser-blue h-775 sm:hidden">
+      <div>
+        <h1 class="font-decor text-2xl p-5 text-white leading-8">
+          <span class="text-laser-gold text-mobileTitle font-medium"
+            >Laser Construction<sup class="sup">©</sup></span
+          >
+          think the days of the traditional client-contractor relationship are
+          over, and not a moment too soon.
+        </h1>
+      </div>
+      <img class="px-5 mt-24" src="./assets/edited-images/image-5.jpg" alt="" />
+      <h2 class="font-mono text-sm mt-3 pl-5 text-white">Laser Construction</h2>
     </div>
 
-    <div
-      class="block md:flex justify-between mt-14 border-t-2 border-white pt-2 px-20"
-    >
-      <div>
-        <a href="./construction-home.html">
-          <h2 class="font-primary text-2xl leading-title-text">
-            Laser Construction -->
-          </h2>
-        </a>
+    <!-- desktop menu -->
+    <div class="mobile:hidden flex justify-between w-full pt-10 items-center">
+      <a href="/index.html">
+        <img
+          class="pl-16 w-3/5"
+          src="./assets/laser-blue-wordmark.svg"
+          alt=""
+        />
+      </a>
+      <h2 id="date" class="font-mono text-laser-blue"></h2>
+
+      <!-- Menu -->
+      <button
+        id="dropdownDividerButton"
+        data-dropdown-toggle="dropdownDivider"
+        class="pr-16 text-laser-blue text-lg focus:outline-none font-mono"
+        type="button"
+      >
+        Menu
+      </button>
+
+      <!-- Dropdown menu -->
+      <div id="dropdownDivider" class="hidden z-10 w-56 bg-white font-mono">
+        <ul
+          class="text-laser-blue text-md pr-16"
+          aria-labelledby="dropdownDividerButton"
+        >
+          <li>
+            <a href="./about.html" class="block py-1 px-8">About</a>
+            <div class="relative flex items-center pl-8 -translate-y-2">
+              <div class="flex-grow border-t border-laser-blue -"></div>
+            </div>
+          </li>
+          <li>
+            <a href="./sectors.html" class="block py-2 px-8">Sectors</a>
+            <div class="relative flex items-center pl-8 -translate-y-2">
+              <div class="flex-grow border-t border-laser-blue"></div>
+            </div>
+          </li>
+          <li>
+            <a href="./sustainability.html" class="block py-2 px-8">Sustain</a>
+            <div class="relative flex items-center pl-8 -translate-y-2">
+              <div class="flex-grow border-t border-laser-blue"></div>
+            </div>
+          </li>
+          <li>
+            <a href="./contact.html" class="block pb-8 py-1 px-8">Contact</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <h2 class="font-primary text-2xl leading-title-text">
-          Laser Hire Services -->
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile:flex justify-between w-full pt-5 items-center sm:hidden">
+      <a href="/index.html">
+        <img
+          class="pl-5 w-7/12"
+          src="./assets/laser-blue-wordmark.svg"
+          alt=""
+        />
+      </a>
+
+      <button
+        id="dropdownDividerButton2"
+        data-dropdown-toggle="dropdownDivider2"
+        class="pr-5 text-laser-blue text-sm focus:outline-none font-mono"
+        type="button"
+      >
+        Menu
+      </button>
+
+      <!-- Dropdown menu -->
+      <div id="dropdownDivider2" class="hidden z-10 w-40 bg-white font-mono">
+        <ul
+          class="text-laser-blue text-md pr-8"
+          aria-labelledby="dropdownDividerButton"
+        >
+          <li>
+            <a href="./about.html" class="block py-1 px-8">About</a>
+            <div class="relative flex items-center pl-8">
+              <div class="flex-grow border-t border-laser-blue"></div>
+            </div>
+          </li>
+          <li>
+            <a href="./sectors.html" class="block py-2 px-8">Sectors</a>
+            <div class="relative flex items-center pl-8">
+              <div class="flex-grow border-t border-laser-blue"></div>
+            </div>
+          </li>
+          <li>
+            <a href="./sustainability.html" class="block py-2 px-8">Sustain</a>
+            <div class="relative flex items-center pl-8">
+              <div class="flex-grow border-t border-laser-blue"></div>
+            </div>
+          </li>
+          <li>
+            <a href="./contact.html" class="block pb-8 py-2 px-8">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- desktop border line -->
+    <div class="mobile:hidden relative flex items-center pt-10">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center mt-2 sm:hidden">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- desktop centred image 1 -->
+    <div class="mobile:hidden flex justify-center items-center">
+      <img
+        class="mt-16 px-16"
+        src="./assets/edited-images/hero-image-1.jpg"
+        alt=""
+      />
+      <img
+        class="pt-8 w-2/4 absolute"
+        src="./assets/lcs- logomark.svg"
+        alt=""
+      />
+    </div>
+
+    <!-- mobile centered image 1 -->
+    <div class="mobile:flex justify-center items-center sm:hidden">
+      <img
+        class="mt-5 px-5"
+        src="./assets/edited-images/hero-image-1.jpg"
+        alt=""
+      />
+      <img
+        class="pt-8 w-2/4 absolute"
+        src="./assets/lcs- logomark.svg"
+        alt=""
+      />
+    </div>
+
+    <!-- desktop image 1 subtext -->
+    <div class="mobile:hidden flex justify-between mt-5">
+      <a href="./sectors.html">
+        <h2 class="font-body text-grey-text border-laser-blue px-16">
+          --> Sectors
+        </h2>
+      </a>
+      <h2 class="font-body text-grey-text border-laser-blue px-16">
+        Castleford, West Yorkshire, 2020
+      </h2>
+    </div>
+
+    <!-- mobile image 1 subtext -->
+    <div class="mobile:flex justify-between text-xs mt-4 sm:hidden">
+      <h2 class="font-body text-grey-text border-laser-blue px-5">
+        Castleford, West Yorkshire, 2020
+      </h2>
+    </div>
+
+    <!-- desktop border line -->
+    <div class="mobile:hidden relative flex items-center pt-10">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center mt-5 sm:hidden">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- desktop paragraph 1 -->
+    <div class="mobile:hidden grid grid-cols-2">
+      <div class="font-primary text-grey-text border-laser-blue p-16 w-11/12">
+        <h2 class="text-xl leading-paragraph-text">
+          Instead, we prefer to build lasting partnerships with a loyal group of
+          clients: the kind of respected developers and constructors who value
+          agile, adaptable multi-skilled teams they can count on for every
+          project. Why? Because it reduces risk, saves money and produces
+          stunning end results - for everyone. No wonder 80% of our clients come
+          back for more.
+        </h2>
+        <a href="/sustainability.html"
+          ><h2
+            class="hidden md:block font-mono text-laser-blueborder-laser-blue pt-80"
+          >
+            --> Sustainability
+          </h2></a
+        >
+      </div>
+      <div class="p-16">
+        <img src="./assets/edited-images/image-2.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- mobile paragraph 1 -->
+    <div class="mobile:grid sm:hidden">
+      <div class="font-primary text-grey-text border-laser-blue p-5 w-11/12">
+        <h2 class="text-sm">
+          Instead, we prefer to build lasting partnerships with a loyal group of
+          clients: the kind of respected developers and constructors who value
+          agile, adaptable multi-skilled teams they can count on for every
+          project. Why? Because it reduces risk, saves money and produces
+          stunning end results - for everyone. No wonder 80% of our clients come
+          back for more.
+        </h2>
+      </div>
+      <div class="px-5 mt-2">
+        <img src="./assets/edited-images/image-2.jpg" alt="" />
+      </div>
+      <a href="/sustainability.html"
+        ><h2
+          class="font-mono text-grey-text text-xs pl-5 border-laser-blue mt-4"
+        >
+          -> Sustainability
+        </h2></a
+      >
+    </div>
+
+    <!-- desktop border line -->
+    <div class="mobile:hidden relative flex items-center">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center mt-5 sm:hidden">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- desktop paragraph 2 -->
+    <div class="mobile:hidden grid grid-cols-2 border-laser-blue">
+      <div class="pt-16 pl-16">
+        <img src="./assets/edited-images/image-3.jpg" alt="" />
+      </div>
+      <div class="font-primary text-grey-text border-laser-blue p-16 w-11/12">
+        <h2 class="text-xl leading-paragraph-text">
+          <span class="font-medium text-laser-gold">ISO 45001. </span>Your
+          people and reputation are in safe hands. As a proud holder of ISO
+          45001, we officially satisfy the latest stringent international
+          standards in Occupational Health and Safety Management Systems. It's
+          your guarantee that we're committed to best practice: keeping workers
+          safer, abiding by the law, and delivering unbeatable performance for
+          our clients.
         </h2>
       </div>
     </div>
+
+    <!-- mobile paragraph 2 -->
+    <div class="mobile:grid text-grey-text border-laser-blue sm:hidden">
+      <div class="font-primary text-grey-text border-laser-blue p-5 w-11/12">
+        <h2 class="text-sm">
+          <span class="font-sm text-laser-gold">ISO 45001. </span>Your people
+          and reputation are in safe hands. As a proud holder of ISO 45001, we
+          officially satisfy the latest stringent international standards in
+          Occupational Health and Safety Management Systems. It's your guarantee
+          that we're committed to best practice: keeping workers safer, abiding
+          by the law, and delivering unbeatable performance for our clients.
+        </h2>
+      </div>
+      <div class="p-5">
+        <img src="./assets/edited-images/image-3.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- desktop border line -->
+    <div class="mobile:hidden relative flex items-center pt-16">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center sm:hidden">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- desktop full image - concrete interior -->
+    <div class="mobile:hidden p-16">
+      <img class="mx-auto" src="./assets/edited-images/image-4.jpg" alt="" />
+    </div>
+
+    <!-- mobile full image - concrete interior -->
+    <div class="mobile:p-5 sm:hidden">
+      <img class="mx-auto" src="./assets/edited-images/image-4.jpg" alt="" />
+    </div>
+
+    <!-- desktop border line -->
+    <div class="mobile:hidden relative flex items-center">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center sm:hidden">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- desktop email subscription -->
+    <div class="mobile:hidden mt-32 w-3/5 mx-auto">
+      <h2
+        class="font-decor text-grey-text border-laser-blue align-center text-4xl text-center"
+      >
+        I would like to receive
+        <span class="font-medium text-laser-blue text-emailLarger"
+          >Laser Construction<sup>©</sup></span
+        >
+        updates, news and information on events.
+      </h2>
+      <div class="mt-12">
+        <input
+          type="email"
+          id="email"
+          class="border border-gray-300 text-grey-text font-mono text-lg focus:bg-laser-blueborder-laser-blue focus:border-laser-blue block w-4/6 p-5 mt-4 mx-auto"
+          placeholder="Enter email address -->"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- mobile email subscription -->
+    <div class="mobile:mt-24 w-3/4 mx-auto sm:hidden">
+      <h2
+        class="font-decor text-grey-text border-laser-blue align-center text-sm text-center"
+      >
+        I would like to receive
+        <span class="font-medium text-laser-blue text-sm"
+          >Laser Construction<sup>©</sup></span
+        >
+        updates, news and information on events.
+      </h2>
+      <div class="">
+        <input
+          type="email"
+          id="email"
+          class="border p-2 border-gray-300 text-grey-text font-mono text-xs mt-4 focus:bg-laser-blue focus:border-laser-blue block w-5/6 mx-auto"
+          placeholder="email address                ->"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- desktop footer -->
+    <section
+      class="hidden lg:grid grid-cols-4 grid-rows-2 h-[450px] border-t border-b border-laser-blue mt-32"
+    >
+      <div>
+        <img class="h-60 p-14" src="./assets/laser-c-rotated.svg" alt="" />
+      </div>
+      <div class="pt-14">
+        <h3 class="font-primaryTitle">Address</h3>
+        <h3 class="font-mono text-grey-text">
+          Office 5, Embsay Mills,<br />
+          Embsay, Skipton, BD23 6QR
+        </h3>
+      </div>
+      <div class="pt-14">
+        <h3 class="font-primaryTitle">Telephone</h3>
+        <h3 class="font-mono pt-2 text-grey-text">+44 (0) 1756 709 018</h3>
+        <h3 class="font-primaryTitle pt-5">Email Address</h3>
+        <h3 class="font-mono pt-2 text-grey-text">enquiries@lasercs.co.uk</h3>
+      </div>
+      <div class="pt-14 border-l border-laser-blue row-span-2 pl-10">
+        <h3 class="font-primaryTitle">
+          Sign-up to our newsletter &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle mt-28">
+          LinkedIn &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle">
+          <a href="https://www.facebook.com/LaserConstructionServices/">
+            Facebook &nbsp;<span class="text-xl">&#8599;</span>
+          </a>
+        </h3>
+        <h5 class="font-mono mt-36 text-xs text-grey-text">
+          <sup>©</sup>&nbsp;Laser Construction 2022
+        </h5>
+      </div>
+      <div class="border-t border-laser-blue">
+        <img class="p-14 w-96" src="./assets/blue-icons.svg" alt="" />
+      </div>
+      <div class="border-t border-laser-blue"></div>
+      <div class="border-t border-laser-blue"></div>
+    </section>
+
+    <!-- mobile footer -->
+    <section class="grid grid-cols-1 lg:hidden mt-24">
+      <div class="flex border-t border-laser-blue">
+        <!-- <img class="h-60 p-14" src="./assets/laser-c-rotated.svg" alt="" /> -->
+        <div class="mt-14">
+          <h3 class="font-primaryTitle">Address</h3>
+          <h3 class="font-mono text-grey-text text-sm">
+            Office 5, Embsay Mills,<br />
+            Embsay, Skipton, BD23 6QR
+          </h3>
+          <h3 class="font-primaryTitle pt-5">Telephone</h3>
+          <h3 class="font-mono pt-2 text-grey-text">+44 (0) 1756 709 018</h3>
+          <h3 class="font-primaryTitle pt-5">Email Address</h3>
+          <h3 class="font-mono pt-2 text-grey-text">enquiries@lasercs.co.uk</h3>
+        </div>
+      </div>
+
+      <div class="mt-10 border-t border-laser-blue row-span-2 pl-14">
+        <h3 class="font-primaryTitle pt-10">
+          Sign-up to our newsletter &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle mt-5">
+          LinkedIn &nbsp;<span class="text-xl">&#8599;</span>
+        </h3>
+        <h3 class="font-primaryTitle">
+          <a href="https://www.facebook.com/LaserConstructionServices/">
+            Facebook &nbsp;<span class="text-xl">&#8599;</span>
+          </a>
+        </h3>
+      </div>
+      <div class="border-t border-laser-blue mt-10 mb-5 pl-14">
+        <img class="p-14 w-72" src="./assets/blue-icons.svg" alt="" />
+        <h5 class="font-mono text-xs text-grey-text">
+          <sup>©</sup>&nbsp;Laser Construction 2022
+        </h5>
+      </div>
+    </section>
   </body>
 </html>
