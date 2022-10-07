@@ -1348,16 +1348,16 @@ input:checked + .toggle-bg{
   margin-top: 1.25rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-32{
   margin-top: 8rem;
 }
 
 .mt-12{
   margin-top: 3rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .mt-28{
@@ -1901,10 +1901,6 @@ input:checked + .toggle-bg{
 
 .pl-14{
   padding-left: 3.5rem;
-}
-
-.pr-10{
-  padding-right: 2.5rem;
 }
 
 .pt-36{
