@@ -1400,6 +1400,10 @@ input:checked + .toggle-bg{
   margin-bottom: 0.25rem;
 }
 
+.mt-48{
+  margin-top: 12rem;
+}
+
 .block{
   display: block;
 }
@@ -1454,6 +1458,22 @@ input:checked + .toggle-bg{
 
 .h-4{
   height: 1rem;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-0{
+  height: 0px;
+}
+
+.h-40{
+  height: 10rem;
+}
+
+.h-44{
+  height: 11rem;
 }
 
 .w-11\/12{
@@ -1518,6 +1538,14 @@ input:checked + .toggle-bg{
 
 .w-4{
   width: 1rem;
+}
+
+.w-48{
+  width: 12rem;
+}
+
+.w-4\/5{
+  width: 80%;
 }
 
 .flex-1{
@@ -1923,8 +1951,16 @@ input:checked + .toggle-bg{
   padding-top: 8rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
 .text-center{
   text-align: center;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .font-decor{
@@ -2041,6 +2077,14 @@ input:checked + .toggle-bg{
 
 .leading-9{
   line-height: 2.25rem;
+}
+
+.leading-none{
+  line-height: 1;
+}
+
+.leading-\[0px\]{
+  line-height: 0px;
 }
 
 .tracking-tight{
@@ -2344,6 +2388,10 @@ input:checked + .toggle-bg{
 
   .mobile\:mt-24{
     margin-top: 6rem;
+  }
+
+  .mobile\:mt-20{
+    margin-top: 5rem;
   }
 
   .mobile\:flex{

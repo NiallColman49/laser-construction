@@ -151,7 +151,7 @@
     </div>
 
     <!-- mobile commited paragraph -->
-    <div class="mobile:p-5 w-3/5 mx-auto sm:hidden">
+    <div class="mobile:p-5 w-4/5 mx-auto sm:hidden">
       <h2 class="font-decor text-grey-text text-sm mt-16 text-center">
         <span class="text-laser-blue font-medium"
           >Laser Construction<sup>©</sup></span
@@ -196,7 +196,7 @@
     </div>
 
     <!-- desktop when clients -->
-    <div class="grid grid-cols-7 mt-20 font-primary">
+    <div class="mobile:hidden grid grid-cols-7 mt-20 font-primary">
       <div class="px-16">
         <h2 class="text-2xl font-primaryTitle text-laser-blue">01</h2>
       </div>
@@ -219,12 +219,41 @@
       </div>
     </div>
 
+    <!-- mobile when clients -->
+    <div class="mobile:mt-20 font-primary sm:hidden">
+      <div class="px-5">
+        <h2 class="text-lg font-primaryTitle text-laser-blue">
+          01 Hire services
+        </h2>
+      </div>
+      <div class="px-5 mt-5">
+        <h3 class="text-grey-text text-sm">
+          When clients told us they struggle to find equipment, we responded by
+          setting up a plant hire division of our own. It makes perfect sense
+          for everyone, because it's one more way of streamlining projects and
+          shrinking their costs.<br />
+          <br />
+          Today, we use our contacts and negotiation skills to source and supply
+          equipment on demand, providing any item a client asks for. And when we
+          say any, we mean any: from extension leads and air-con units to
+          4-tonne dumper trucks, or even hard-to-find gear like specialist
+          technology for underground surveys.
+        </h3>
+      </div>
+    </div>
+
     <!-- desktop border line -->
     <div class="mobile:hidden relative flex items-center mt-16">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
-    <div class="grid grid-cols-7 mt-20 font-primary">
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center mt-8 sm:hidden">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- desktop training and development -->
+    <div class="mobile:hidden grid grid-cols-7 mt-20 font-primary">
       <div class="px-16">
         <h2 class="text-2xl font-primaryTitle text-laser-blue">02</h2>
       </div>
@@ -250,12 +279,41 @@
       </div>
     </div>
 
+    <!-- mobile training and development -->
+    <div class="mobile:mt-20 font-primary sm:hidden">
+      <div class="px-5">
+        <h2 class="text-lg font-primaryTitle text-laser-blue">
+          02 Training and Development
+        </h2>
+      </div>
+      <div class="px-5 mt-5">
+        <h3 class="text-grey-text text-sm">
+          With so much expertise at our disposal, it seemed a shame not to share
+          it. Our Construction Training and Development service does exactly
+          that. We provide accredited instructors who'll train and qualify your
+          people in everything from first aid and health & safety through to
+          project management, conflict management and high-risk specialisms like
+          infrastructure.<br />
+          <br />
+          Our resources can handle any number of individuals at any UK venue
+          too, including out on site, at our own training facility here in
+          Lancashire, or even online.
+        </h3>
+      </div>
+    </div>
+
     <!-- desktop border line -->
     <div class="mobile:hidden relative flex items-center mt-16">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
-    <div class="grid grid-cols-7 mt-20 font-primary">
+    <!-- mobile border line -->
+    <div class="mobile:relative flex items-center mt-8 sm:hidden">
+      <div class="flex-grow border-t border-laser-blue"></div>
+    </div>
+
+    <!-- desktop traffic management -->
+    <div class="mobile:hidden grid grid-cols-7 mt-20 font-primary">
       <div class="px-16">
         <h2 class="text-2xl font-primaryTitle text-laser-blue">03</h2>
       </div>
@@ -280,13 +338,35 @@
       </div>
     </div>
 
+    <!-- mobile traffic management -->
+    <div class="mobile:mt-20 font-primary sm:hidden">
+      <div class="px-5">
+        <h2 class="text-lg font-primaryTitle text-laser-blue">
+          03 Traffic Management
+        </h2>
+      </div>
+      <div class="px-5 mt-5">
+        <h3 class="text-grey-text text-sm">
+          By looking at the bigger picture and understanding the real-world
+          challenges faced by developers and engineers, we spotted a chance to
+          make life simpler for us all. Our dedicated Traffic Management service
+          is a vital additional resource, enabling us to handle any issues
+          around access and traffic on your behalf.<br />
+          <br />
+          Whether we're supplying cones and temporary lights or completing
+          official paperwork to close a motorway - this service literally gives
+          your project the green light.
+        </h3>
+      </div>
+    </div>
+
     <!-- desktop border line -->
     <div class="mobile:hidden relative flex items-center pt-24">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
     <!-- mobile border line -->
-    <div class="mobile:relative flex items-center px-5 mt-16 sm:hidden">
+    <div class="mobile:relative flex items-center mt-16 sm:hidden">
       <div class="flex-grow border-t border-laser-blue"></div>
     </div>
 
@@ -335,15 +415,14 @@
     </div>
 
     <!-- mobile further information -->
-    <div
-      class="mobile:font-copy text-grey-text text-sm align-center mx-auto w-3/4 pt-32 sm:hidden"
-    >
-      <div class="mx-auto text-center mt-32">
-        <h2>
-          For further information<br />
-          please
-          <a class="text-laser-blue" href="./contact.html">contact us.</a>
-        </h2>
+    <div class="mobile:font-copy text-grey-text text-sm sm:hidden">
+      <div class="flex h-44 items-center justify-center">
+        <h5 class="">
+          For further information please
+          <span class="text-laser-blue"
+            ><a class="h-0" href="./contact.html">contact us.</a></span
+          >
+        </h5>
       </div>
     </div>
 
@@ -391,10 +470,10 @@
     </section>
 
     <!-- mobile footer -->
-    <section class="grid grid-cols-1 lg:hidden mt-24">
+    <section class="grid grid-cols-1 lg:hidden">
       <div class="flex border-t border-laser-blue">
         <!-- <img class="h-60 p-14" src="./assets/laser-c-rotated.svg" alt="" /> -->
-        <div class="mt-14">
+        <div class="mt-14 pl-5">
           <h3 class="font-primaryTitle">Address</h3>
           <h3 class="font-mono text-grey-text text-sm">
             Office 5, Embsay Mills,<br />
@@ -407,7 +486,7 @@
         </div>
       </div>
 
-      <div class="mt-10 border-t border-laser-blue row-span-2 pl-14">
+      <div class="mt-10 border-t border-laser-blue row-span-2 pl-5">
         <h3 class="font-primaryTitle pt-10">
           Sign-up to our newsletter &nbsp;<span class="text-xl">&#8599;</span>
         </h3>
@@ -420,9 +499,9 @@
           </a>
         </h3>
       </div>
-      <div class="border-t border-laser-blue mt-10 mb-5 pl-14">
-        <img class="p-14 w-72" src="./assets/blue-icons.svg" alt="" />
-        <h5 class="font-mono text-xs text-grey-text">
+      <div class="border-t border-laser-blue pb-5 p-5">
+        <img class="w-48 mt-10" src="./assets/blue-icons.svg" alt="" />
+        <h5 class="font-mono text-xs text-grey-text mt-10">
           <sup>©</sup>&nbsp;Laser Construction 2022
         </h5>
       </div>
